@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "exercises": [
+    {
+      "exerciseName": "Bench Press",
+      "time": "45 minutes",
+      "restIntervals": "3 minutes",
+      "setsNumber": 4,
+      "repsNumber": 7,
+      "date": "2023-12-18T23:00:00.000Z",
+      "description": "Lifting weight with barbell off the bench",
+      "typesOfTraining": "Bodybuilding",
+      "id": 3
+    },
+    {
+      "exerciseName": "Deadlift",
+      "time": "30 minutes",
+      "restIntervals": "3 minutes",
+      "setsNumber": 3,
+      "repsNumber": 6,
+      "date": "2021-02-08T23:00:00.000Z",
+      "description": "Deadlift heavy barbell off the floor\n",
+      "typesOfTraining": "Powerlifting",
+      "id": 4
+    },
+    {
+      "exerciseName": "Squats",
+      "time": "45 minutes",
+      "restIntervals": "5 minutes",
+      "setsNumber": 4,
+      "repsNumber": 6,
+      "date": "2023-12-27T23:00:00.000Z",
+      "description": "Low bar back squat",
+      "typesOfTraining": "Crossfit",
+      "id": 6
+    },
+    {
+      "exerciseName": "Lunges",
+      "time": "15min",
+      "restIntervals": "2min",
+      "setsNumber": 3,
+      "repsNumber": 15,
+      "date": "2023-12-16T23:00:00.000Z",
+      "description": "Walking with dumbbell across the gym",
+      "typesOfTraining": "Bodybuilding",
+      "id": 7
+    },
+    {
+      "exerciseName": "Dumbbell Bench Press",
+      "time": "30 min",
+      "restIntervals": "2 min",
+      "setsNumber": 5,
+      "repsNumber": 12,
+      "date": "2023-12-05T23:00:00.000Z",
+      "description": "Bench press with dumbbells ",
+      "typesOfTraining": "Bodybuilding",
+      "id": 10
+    },
+    {
+      "exerciseName": "Running",
+      "time": "50 min",
+      "restIntervals": "Every 7 minutes resting 3 minute",
+      "setsNumber": "",
+      "repsNumber": null,
+      "date": "2023-12-20T23:00:00.000Z",
+      "description": "Cardio",
+      "typesOfTraining": "Treadmill",
+      "id": 11
+    },
+    {
+      "exerciseName": "gkspolgk",
+      "time": "fsef",
+      "restIntervals": "fse",
+      "setsNumber": 2,
+      "repsNumber": 3,
+      "date": "2023-12-11T23:00:00.000Z",
+      "description": "sef sfg gghs a sghs ",
+      "typesOfTraining": "Bodybuilding",
+      "id": 12
+    }
+  ]
+}

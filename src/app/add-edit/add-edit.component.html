@@ -1,0 +1,63 @@
+<div mat-dialog-title>Add Exercise</div>>
+<!-- Form -->
+<form [formGroup]="trainingForm" (ngSubmit)="onFormSubmit()">
+<!-- Dialog content -->
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Exercise name:</mat-label>
+            <input matInput type="text" formControlName="exerciseName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Time:</mat-label>
+            <input matInput formControlName="time">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Rest intervals:</mat-label>
+            <input matInput formControlName="restIntervals">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Number of sets:</mat-label>
+            <input matInput type="number" formControlName="setsNumber">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Reps:</mat-label>
+            <input matInput type="number" formControlName="repsNumber">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Choose a date:</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field>
+            <mat-label>Exercise description:</mat-label>
+            <textarea matInput formControlName="description"></textarea>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Training type:</mat-label>
+            <mat-select formControlName="typesOfTraining">
+                <mat-option *ngFor="let val of trainingTypes" [value]="val">
+                    {{val}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<!-- Dialog actions  -->
+<!-- <div mat-dialog-actions class="buttons">
+    <button mat-raised-button class="b" type="button" [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" class="b" type="submit"></button>
+</div> -->
+<div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+</div>
+</form>
