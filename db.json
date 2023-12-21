@@ -18,28 +18,6 @@
   },
   "exercises": [
     {
-      "exerciseName": "Bench Press",
-      "time": "45 minutes",
-      "restIntervals": "3 minutes",
-      "setsNumber": 4,
-      "repsNumber": 7,
-      "date": "2023-12-18T23:00:00.000Z",
-      "description": "Lifting weight with barbell off the bench",
-      "typesOfTraining": "Bodybuilding",
-      "id": 3
-    },
-    {
-      "exerciseName": "Deadlift",
-      "time": "30 minutes",
-      "restIntervals": "3 minutes",
-      "setsNumber": 3,
-      "repsNumber": 6,
-      "date": "2021-02-08T23:00:00.000Z",
-      "description": "Deadlift heavy barbell off the floor\n",
-      "typesOfTraining": "Powerlifting",
-      "id": 4
-    },
-    {
       "exerciseName": "Squats",
       "time": "45 minutes",
       "restIntervals": "5 minutes",
@@ -49,17 +27,6 @@
       "description": "Low bar back squat",
       "typesOfTraining": "Crossfit",
       "id": 6
-    },
-    {
-      "exerciseName": "Lunges",
-      "time": "15min",
-      "restIntervals": "2min",
-      "setsNumber": 3,
-      "repsNumber": 15,
-      "date": "2023-12-16T23:00:00.000Z",
-      "description": "Walking with dumbbell across the gym",
-      "typesOfTraining": "Bodybuilding",
-      "id": 7
     },
     {
       "exerciseName": "Dumbbell Bench Press",
