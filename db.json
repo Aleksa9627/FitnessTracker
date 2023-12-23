@@ -51,15 +51,48 @@
       "id": 11
     },
     {
-      "exerciseName": "gkspolgk",
-      "time": "fsef",
-      "restIntervals": "fse",
-      "setsNumber": 2,
-      "repsNumber": 3,
-      "date": "2023-12-11T23:00:00.000Z",
-      "description": "sef sfg gghs a sghs ",
+      "exerciseName": "Romanian Deadlifts",
+      "time": "",
+      "restIntervals": "3 min",
+      "setsNumber": 3,
+      "repsNumber": 7,
+      "date": "2023-12-18T23:00:00.000Z",
+      "description": "Deadlift that starts from the top",
       "typesOfTraining": "Bodybuilding",
       "id": 12
+    },
+    {
+      "exerciseName": "Lunges",
+      "time": "",
+      "restIntervals": "2min",
+      "setsNumber": 3,
+      "repsNumber": 10,
+      "date": "2023-12-03T23:00:00.000Z",
+      "description": "",
+      "typesOfTraining": "Bodybuilding",
+      "id": 13
+    },
+    {
+      "exerciseName": "Outside running",
+      "time": "",
+      "restIntervals": "Every 3km",
+      "setsNumber": "",
+      "repsNumber": "",
+      "date": "2023-12-18T23:00:00.000Z",
+      "description": "",
+      "typesOfTraining": "Outdoor Running",
+      "id": 14
+    },
+    {
+      "exerciseName": "Snatch",
+      "time": "",
+      "restIntervals": "5min",
+      "setsNumber": 12,
+      "repsNumber": 3,
+      "date": "2023-12-22T23:00:00.000Z",
+      "description": "",
+      "typesOfTraining": "Weightlifting",
+      "id": 15
     }
   ]
 }

@@ -28,6 +28,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -66,6 +68,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSortModule,
     MatSnackBarModule,
     MatDividerModule,
+    MatTabsModule,
 
     HttpClientModule,
 
