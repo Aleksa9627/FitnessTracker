@@ -1,0 +1,27 @@
+<div class="signUp">
+    <h1>Become a member:</h1>
+    <!-- E-mail input -->
+    <mat-form-field>
+        <mat-label>Enter your email: </mat-label>
+        <input matInput placeholder="pat@example.com" required>
+    </mat-form-field>
+    <!-- Name input -->
+    <mat-form-field>
+        <mat-label>Enter your name: </mat-label>
+        <input matInput required>
+    </mat-form-field>
+    <!-- Password input -->
+    <mat-form-field>
+        <mat-label>Enter your password: </mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" required>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    <!--Sign up button-->
+    <button mat-raised-button color="warn">Sign Up</button>
+    <mat-divider></mat-divider>
+    <a mat-button href="http://localhost:4200/login">Return to previous page</a>
+    <mat-icon>keyboard_return</mat-icon>
+</div>

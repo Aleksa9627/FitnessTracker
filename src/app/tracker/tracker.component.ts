@@ -3,7 +3,6 @@ import { AddEditComponent } from '../add-edit/add-edit.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ExerciseService } from '../services/exercise.service';
 import { CoreService } from '../core/core.service';
-import { error } from 'console';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -14,6 +13,10 @@ import { MatSort } from '@angular/material/sort';
   styleUrl: './tracker.component.css'
 })
 export class TrackerComponent implements OnInit {
+
+  pageTitle: string = 'exercise tracker';
+  pageSubtitle: string = 'no need to remember your workouts anymore, now you can save your workout with just few clicks!';
+
   displayedColumns: string[] = [
     'exerciseName',
     'time',

@@ -1,34 +1,33 @@
 <div class="main-body">
+    <h1 class="titles">
+        {{pageTitle | uppercase}}
+    </h1>
+    <mat-divider></mat-divider>
+    <h3 class="subtitle">
+        {{pageSubtitle | uppercase}}
+    </h3>
     <button mat-raised-button (click)="openAddEditForm()">
         Add Exercise
     </button>
     <mat-divider></mat-divider>
-    <mat-form-field>
-        <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" #input>
-    </mat-form-field>
     <div class="table-container">
         <table mat-table [dataSource]="dataSource" matSort>
 
-            <!-- ID Column -->
-            <ng-container matColumnDef="exerciseName">
+            <ng-container matColumnDef="exerciseName" class="aaa">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Exercise Name </th>
                 <td mat-cell *matCellDef="let row"> {{row.exerciseName}} </td>
             </ng-container>
 
-            <!-- Progress Column -->
             <ng-container matColumnDef="time">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Time </th>
                 <td mat-cell *matCellDef="let row"> {{row.time}} </td>
             </ng-container>
 
-            <!-- Name Column -->
             <ng-container matColumnDef="restIntervals">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Rest Intervals </th>
                 <td mat-cell *matCellDef="let row"> {{row.restIntervals}} </td>
             </ng-container>
 
-            <!-- Fruit Column -->
             <ng-container matColumnDef="setsNumber">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Number of sets </th>
                 <td mat-cell *matCellDef="let row"> {{row.setsNumber}} </td>
@@ -54,19 +53,19 @@
                 <td mat-cell *matCellDef="let row"> {{row.typesOfTraining}} </td>
             </ng-container>
 
-            <ng-container matColumnDef="id">
+            <ng-container matColumnDef="id" >
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-                <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+                <td mat-cell *matCellDef="let row" > {{row.id}} </td>
             </ng-container>
 
-            <ng-container matColumnDef="action">
+            <ng-container matColumnDef="action" >
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
                 <td mat-cell *matCellDef="let row">
-                    <button mat-icon-button color="primary" (click)="openEditForm(row)">
-                        <mat-icon>edit</mat-icon>
-                    </button>
                     <button mat-icon-button color="warn" (click)="deleteExercise(row.id)">
                         <mat-icon>delete</mat-icon>
+                    </button>
+                    <button mat-icon-button color="primary" (click)="openEditForm(row)">
+                        <mat-icon>edit</mat-icon>
                     </button>
                 </td>
             </ng-container>
@@ -79,6 +78,11 @@
                 <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
             </tr>
         </table>
+        <mat-divider></mat-divider>
+        <mat-form-field>
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event)" #input>
+        </mat-form-field>
 
         <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
     </div>

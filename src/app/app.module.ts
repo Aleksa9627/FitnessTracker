@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 //Components
 import { AppComponent } from './app.component';
@@ -17,7 +18,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -28,15 +29,15 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDividerModule } from '@angular/material/divider';
-import {MatTabsModule} from '@angular/material/tabs';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { HttpClientModule } from '@angular/common/http';
 
 //Warning module
 import { ReactiveFormsModule } from '@angular/forms';
-
-
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -47,11 +48,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     AboutComponent,
     AddEditComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     //Angular Material
     MatToolbarModule,
     MatButtonModule,
@@ -69,6 +73,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSnackBarModule,
     MatDividerModule,
     MatTabsModule,
+    MatStepperModule,
 
     HttpClientModule,
 
@@ -77,7 +82,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
   ],
   bootstrap: [AppComponent]
 })

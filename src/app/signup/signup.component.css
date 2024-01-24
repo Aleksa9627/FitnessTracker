@@ -1,0 +1,13 @@
+.signUp {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 5%;
+
+    mat-form-field {
+        width: 100%;
+    }
+
+    background-color:rgba(156, 156, 156, 0.6);
+    
+}

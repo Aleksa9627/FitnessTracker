@@ -1,0 +1,22 @@
+<div class="login">
+    <h1>Login and start adding your training now! </h1>
+    <!-- E-mail input -->
+    <mat-form-field>
+        <mat-label>Enter your email: </mat-label>
+        <input matInput placeholder="pat@example.com" required>
+    </mat-form-field>
+    <!-- Password input -->
+    <mat-form-field>
+        <mat-label>Enter your password: </mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" required>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    <!--Sign up button-->
+    <button mat-raised-button color="warn">Login</button>
+    <mat-divider></mat-divider>
+    Still not a member?
+    <a mat-button href="http://localhost:4200/signup">Sign Up</a>
+</div>                       

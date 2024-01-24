@@ -1,28 +1,24 @@
 {
-  "posts": [
+  "members": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "email": "mil@gmail.com",
+      "password": "milos123",
+      "name": "Milos"
+    },
+    {
+      "email": "peter@gmail.com",
+      "password": "peter123",
+      "name": "Peter"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
+
   "exercises": [
     {
       "exerciseName": "Squats",
       "time": "45 minutes",
       "restIntervals": "5 minutes",
-      "setsNumber": 4,
-      "repsNumber": 6,
+      "setsNumber": 2,
+      "repsNumber": 3,
       "date": "2023-12-27T23:00:00.000Z",
       "description": "Low bar back squat",
       "typesOfTraining": "Crossfit",
@@ -33,7 +29,7 @@
       "time": "30 min",
       "restIntervals": "2 min",
       "setsNumber": 5,
-      "repsNumber": 12,
+      "repsNumber": 11,
       "date": "2023-12-05T23:00:00.000Z",
       "description": "Bench press with dumbbells ",
       "typesOfTraining": "Bodybuilding",
@@ -44,7 +40,7 @@
       "time": "50 min",
       "restIntervals": "Every 7 minutes resting 3 minute",
       "setsNumber": "",
-      "repsNumber": null,
+      "repsNumber": 0,
       "date": "2023-12-20T23:00:00.000Z",
       "description": "Cardio",
       "typesOfTraining": "Treadmill",
@@ -77,7 +73,7 @@
       "time": "",
       "restIntervals": "Every 3km",
       "setsNumber": "",
-      "repsNumber": "",
+      "repsNumber": 0,
       "date": "2023-12-18T23:00:00.000Z",
       "description": "",
       "typesOfTraining": "Outdoor Running",
@@ -87,8 +83,8 @@
       "exerciseName": "Snatch",
       "time": "",
       "restIntervals": "5min",
-      "setsNumber": 12,
-      "repsNumber": 3,
+      "setsNumber": 11,
+      "repsNumber": 4,
       "date": "2023-12-22T23:00:00.000Z",
       "description": "",
       "typesOfTraining": "Weightlifting",
