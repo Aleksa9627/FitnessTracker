@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    color: darkred;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCard{
+    max-width: 30%;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    background-color:#a2a3a2;
+}
+.cardImg{
+    max-width: 400px;
+    border-radius: 5px;
+}
+.cards{
+    text-align: center;
+}

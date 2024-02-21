@@ -2,8 +2,7 @@
     <span> <mat-icon>fitness_center</mat-icon> Fitness Tracker</span>
     <div class="spacer"></div>
     <a mat-button routerLink="home">Home</a>
-    <a mat-button routerLink="tracker">Tracker</a>
-    <a mat-button routerLink="contact">Contact</a>
-    <a mat-button routerLink="about">About</a>
-    <a mat-stroked-button color="basic" routerLink="login">Login</a>
+    <a mat-button routerLink="tracker" *ngIf="isLoggedIn && !isOnLoginPage">Tracker</a>
+    <a mat-stroked-button color="basic" *ngIf="isLoggedIn" (click)="logout()">Logout</a>
+    <a mat-stroked-button color="basic" routerLink="login" *ngIf="!isLoggedIn || isOnLoginPage" [disabled]="isOnLoginPage" (click)="login()">Login</a>
 </mat-toolbar>

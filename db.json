@@ -1,17 +1,30 @@
 {
   "members": [
     {
+      "id": 22,
       "email": "mil@gmail.com",
       "password": "milos123",
       "name": "Milos"
     },
     {
+      "id": 58,
       "email": "peter@gmail.com",
       "password": "peter123",
       "name": "Peter"
+    },
+    {
+      "fullName": "Aleksa",
+      "email": "aleksa.271996@gmail.com",
+      "password": "123456789",
+      "id": 59
+    },
+    {
+      "fullName": "a",
+      "email": "a@gmail.com",
+      "password": "a",
+      "id": 32
     }
   ],
-
   "exercises": [
     {
       "exerciseName": "Squats",

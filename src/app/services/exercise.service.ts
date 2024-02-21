@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExerciseService {
 
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient, private _authService: AuthService) {}
 
   addExercise(data: any): Observable<any> {
     return this._http.post('http://localhost:3000/exercises', data);

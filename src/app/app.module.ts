@@ -9,9 +9,9 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home/home.component';
 import { TrackerComponent } from './tracker/tracker.component';
-import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 //Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -31,13 +31,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatCardModule } from '@angular/material/card';
+
 
 import { HttpClientModule } from '@angular/common/http';
 
 //Warning module
 import { ReactiveFormsModule } from '@angular/forms';
-import { SignupComponent } from './signup/signup.component';
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +45,6 @@ import { LoginComponent } from './login/login.component';
     ToolbarComponent,
     HomeComponent,
     TrackerComponent,
-    ContactComponent,
-    AboutComponent,
     AddEditComponent,
     SignupComponent,
     LoginComponent,
@@ -74,6 +72,7 @@ import { LoginComponent } from './login/login.component';
     MatDividerModule,
     MatTabsModule,
     MatStepperModule,
+    MatCardModule,
 
     HttpClientModule,
 
@@ -82,7 +81,7 @@ import { LoginComponent } from './login/login.component';
 
   ],
   providers: [
-    provideClientHydration(),
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
