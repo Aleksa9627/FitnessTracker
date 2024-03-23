@@ -9,13 +9,16 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   private isLoggedInSubject: BehaviorSubject<boolean>;
-  public isLoggedIn: Observable<boolean>;
+  private loggedInIdSubject: BehaviorSubject<number>;
   private baseUrl = 'http://localhost:3000';
+  
+  isLoggedIn: Observable<boolean>;
 
   constructor(private _http: HttpClient, private router: Router) { 
     // Initialize isLoggedInSubject with the initial value of false
     this.isLoggedInSubject = new BehaviorSubject<boolean>(false);
     this.isLoggedIn = this.isLoggedInSubject.asObservable();
+    this.loggedInIdSubject = new BehaviorSubject<number>(0);
   }
 
   login() {

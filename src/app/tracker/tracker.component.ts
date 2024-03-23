@@ -6,6 +6,7 @@ import { CoreService } from '../core/core.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { Exercise } from '../interfaces/exercise';
 
 @Component({
   selector: 'app-tracker',
@@ -29,14 +30,14 @@ export class TrackerComponent implements OnInit {
     'id',
     'action'
   ]
-  dataSource!: MatTableDataSource<any>;
+  dataSource!: MatTableDataSource<Exercise>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(
-    private _dialog: MatDialog, 
-    private _exerciseService: ExerciseService, 
+    private _dialog: MatDialog,
+    private _exerciseService: ExerciseService,
     private _coreService: CoreService) { }
 
   ngOnInit(): void {
@@ -56,7 +57,10 @@ export class TrackerComponent implements OnInit {
 
   getExercise() {
     this._exerciseService.getExerciseList().subscribe({
-      next: (res: any) => {
+
+      next: (res: Exercise[]) => {
+        let id = sessionStorage.getItem('id');
+        res = res.filter(x => x.userId === +id);
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.sort = this.sort;
         this.dataSource.paginator = this.paginator;

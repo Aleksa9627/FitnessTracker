@@ -23,11 +23,17 @@
       "email": "a@gmail.com",
       "password": "a",
       "id": 32
+    },
+    {
+      "fullName": "a",
+      "email": "fsedf@gmail.com",
+      "password": "a",
+      "id": 60
     }
   ],
   "exercises": [
     {
-      "exerciseName": "Squats",
+      "exerciseName": "Squatssssss",
       "time": "45 minutes",
       "restIntervals": "5 minutes",
       "setsNumber": 2,
@@ -35,6 +41,7 @@
       "date": "2023-12-27T23:00:00.000Z",
       "description": "Low bar back squat",
       "typesOfTraining": "Crossfit",
+      "userId": 32,
       "id": 6
     },
     {
@@ -46,7 +53,8 @@
       "date": "2023-12-05T23:00:00.000Z",
       "description": "Bench press with dumbbells ",
       "typesOfTraining": "Bodybuilding",
-      "id": 10
+      "id": 10,
+      "userId": 32
     },
     {
       "exerciseName": "Running",
@@ -57,7 +65,8 @@
       "date": "2023-12-20T23:00:00.000Z",
       "description": "Cardio",
       "typesOfTraining": "Treadmill",
-      "id": 11
+      "id": 11,
+      "userId": 60
     },
     {
       "exerciseName": "Romanian Deadlifts",
@@ -68,7 +77,8 @@
       "date": "2023-12-18T23:00:00.000Z",
       "description": "Deadlift that starts from the top",
       "typesOfTraining": "Bodybuilding",
-      "id": 12
+      "id": 12,
+      "userId": 60
     },
     {
       "exerciseName": "Lunges",
@@ -79,7 +89,8 @@
       "date": "2023-12-03T23:00:00.000Z",
       "description": "",
       "typesOfTraining": "Bodybuilding",
-      "id": 13
+      "id": 13,
+      "userId": 58
     },
     {
       "exerciseName": "Outside running",
@@ -90,18 +101,32 @@
       "date": "2023-12-18T23:00:00.000Z",
       "description": "",
       "typesOfTraining": "Outdoor Running",
-      "id": 14
+      "id": 14,
+      "userId": 32
     },
     {
       "exerciseName": "Snatch",
-      "time": "",
+      "time": "10min",
       "restIntervals": "5min",
       "setsNumber": 11,
       "repsNumber": 4,
       "date": "2023-12-22T23:00:00.000Z",
       "description": "",
       "typesOfTraining": "Weightlifting",
-      "id": 15
+      "id": 15,
+      "userId": 32
+    },
+    {
+      "exerciseName": "dgddc",
+      "time": "",
+      "restIntervals": "",
+      "setsNumber": "",
+      "repsNumber": 3,
+      "date": "",
+      "description": "",
+      "typesOfTraining": "",
+      "userId": 32,
+      "id": 16
     }
   ]
 }
