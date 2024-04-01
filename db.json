@@ -110,23 +110,35 @@
       "restIntervals": "5min",
       "setsNumber": 11,
       "repsNumber": 4,
-      "date": "2023-12-22T23:00:00.000Z",
+      "date": "2024-01-23T23:00:00.000Z",
       "description": "",
       "typesOfTraining": "Weightlifting",
-      "id": 15,
-      "userId": 32
+      "userId": 32,
+      "id": 15
     },
     {
-      "exerciseName": "dgddc",
-      "time": "",
-      "restIntervals": "",
-      "setsNumber": "",
-      "repsNumber": 3,
+      "exerciseName": "A",
+      "time": "A",
+      "restIntervals": "A",
+      "setsNumber": 1,
+      "repsNumber": 1,
       "date": "",
       "description": "",
       "typesOfTraining": "",
       "userId": 32,
       "id": 16
+    },
+    {
+      "exerciseName": "Goblet Squats",
+      "time": "15 min",
+      "restIntervals": "5Min",
+      "setsNumber": 3,
+      "repsNumber": 12,
+      "date": "2024-04-22T23:00:00.000Z",
+      "description": "",
+      "typesOfTraining": "Powerlifting",
+      "userId": 22,
+      "id": 17
     }
   ]
 }
