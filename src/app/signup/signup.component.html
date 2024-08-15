@@ -1,7 +1,6 @@
 <div class="signUp">
     <h1>Become a member:</h1>
     <form [formGroup]="registerForm" (ngSubmit)="registerMember()">
-        <!-- E-mail input -->
         <mat-form-field>
             <mat-label>Enter your email: </mat-label>
             <input
@@ -17,7 +16,6 @@
             <mat-error>Email is <strong>required</strong></mat-error>
             }
         </mat-form-field>
-        <!-- Name input -->
         <mat-form-field>
             <mat-label>Enter your fullname: </mat-label>
             <input type="text" 
@@ -27,7 +25,6 @@
             matInput
             required>
         </mat-form-field>
-        <!-- Password input -->
         <mat-form-field>
             <mat-label>Enter your password: </mat-label>
             <input formControlName="password" type="password" name="password" placeholder="Type your password"
@@ -37,7 +34,6 @@
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
-        <!--Sign up button-->
         <div mat-dialog-actions id="button">
             <button color='warn' mat-raised-button type="submit" [disabled]="!registerForm.valid">Sign Up</button>
         </div>

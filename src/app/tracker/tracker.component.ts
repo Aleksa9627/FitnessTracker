@@ -54,7 +54,6 @@ export class TrackerComponent implements OnInit {
       },
     });
   }
-
   getExercise() {
     this._exerciseService.getExerciseList().subscribe({
 
@@ -68,7 +67,6 @@ export class TrackerComponent implements OnInit {
       error: console.log,
     });
   }
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
@@ -77,7 +75,6 @@ export class TrackerComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-
   deleteExercise(id: number) {
     this._exerciseService.deleteExercise(id).subscribe({
       next: (res) => {
@@ -87,12 +84,10 @@ export class TrackerComponent implements OnInit {
       error: console.log,
     })
   }
-
   openEditForm(data: any) {
     const dialogRef = this._dialog.open(AddEditComponent, {
       data,
     });
-
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
@@ -102,5 +97,3 @@ export class TrackerComponent implements OnInit {
     });
   }
 }
-
-

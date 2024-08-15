@@ -11,7 +11,6 @@ import { Member } from '../interfaces/auth';
 })
 
 export class SignupComponent {
-
   registerForm = this.fb.group({
     fullName: ['', Validators.required],
     email: ['', Validators.required],

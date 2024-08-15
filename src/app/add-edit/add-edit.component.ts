@@ -11,9 +11,7 @@ import { CoreService } from '../core/core.service';
 })
 
 export class AddEditComponent implements OnInit {
-
   trainingForm: FormGroup;
-
   trainingTypes: string[] = [
     'Weightlifting',
     'Powerlifting',
@@ -27,7 +25,6 @@ export class AddEditComponent implements OnInit {
     'HIIT',
     'Indoor Fitness'
   ]
-
   constructor(private _fb: FormBuilder,
     private _exerciseService: ExerciseService,
     private _dialogRef: MatDialogRef<AddEditComponent>,
@@ -45,11 +42,9 @@ export class AddEditComponent implements OnInit {
       typesOfTraining: ''
     })
   }
-
   ngOnInit(): void {
     this.trainingForm.patchValue(this.data);
   }
-
   onFormSubmit() {
     if (this.trainingForm.valid) {
       if (this.data) {
@@ -73,7 +68,6 @@ export class AddEditComponent implements OnInit {
           }
         });
       }
-
     }
   }
 }

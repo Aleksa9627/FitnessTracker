@@ -4,5 +4,6 @@
     <a mat-button routerLink="home">Home</a>
     <a mat-button routerLink="tracker" *ngIf="isLoggedIn && !isOnLoginPage">Tracker</a>
     <a mat-stroked-button color="basic" *ngIf="isLoggedIn" (click)="logout()">Logout</a>
-    <a mat-stroked-button color="basic" routerLink="login" *ngIf="!isLoggedIn || isOnLoginPage" [disabled]="isOnLoginPage" (click)="login()">Login</a>
+    <a mat-stroked-button color="basic" routerLink="login" 
+    *ngIf="!isLoggedIn || isOnLoginPage" [disabled]="isOnLoginPage" (click)="login()">Login</a>
 </mat-toolbar>

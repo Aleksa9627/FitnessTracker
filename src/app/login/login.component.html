@@ -1,34 +1,26 @@
 <div class="login">
     <h1>Login and start adding your training now! </h1>
     <form [formGroup]="loginForm" (ngSubmit)="loginMember()">
-    <!-- E-mail input -->
-    <mat-form-field>
-        <mat-label>Enter your email: </mat-label>
-        <input type="email" 
-        formControlName="email" 
-        matInput 
-        placeholder="Type your email">
-    </mat-form-field>
-    <!-- Password input -->
-    <mat-form-field>
-        <mat-label>Enter your password: </mat-label>
-        <input 
-            formControlName="password" 
-            type="password"
-            name="password"
-            placeholder="Type your password"
-            pInputText
-            matInput [type]="hide ? 'password' : 'text'" 
-            required>
-        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </button>
-    </mat-form-field>
-    <!--Login button-->
-    <button mat-raised-button color="warn" type="submit" [disabled]="!loginForm.valid" *ngIf="loginForm.valid">Login</button>
-    <mat-divider></mat-divider>
-    Still not a member?
-    <a mat-button href="http://localhost:4200/signup">Sign Up</a>
-</form>
+        <!-- E-mail input -->
+        <mat-form-field>
+            <mat-label>Enter your email: </mat-label>
+            <input type="email" formControlName="email" matInput placeholder="Type your email">
+        </mat-form-field>
+        <!-- Password input -->
+        <mat-form-field>
+            <mat-label>Enter your password: </mat-label>
+            <input formControlName="password" type="password" name="password" placeholder="Type your password"
+                pInputText matInput [type]="hide ? 'password' : 'text'" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <!--Login button-->
+        <button mat-raised-button color="warn" type="submit" [disabled]="!loginForm.valid"
+            *ngIf="loginForm.valid">Login</button>
+        <mat-divider></mat-divider>
+        Still not a member?
+        <a mat-button href="http://localhost:4200/signup">Sign Up</a>
+    </form>
 </div>
